@@ -93,9 +93,9 @@ def main():
             # Assign vibrant colors to each entity type
             ENTITY_COLORS = {
                 "O": "#ffffff",      # White for non-entities
-                "B-AC": "#ffb347",  # Orange
-                "B-LF": "#77dd77",  # Green
-                "I-LF": "#779ecb",  # Blue
+                "B-AC": "#ff1744",  # Vibrant Red
+                "B-LF": "#00e676",  # Vibrant Green
+                "I-LF": "#2979ff",  # Vibrant Blue
             }
 
             def get_bgcolor(label):
