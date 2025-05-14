@@ -1,6 +1,6 @@
 # BioBERT Streamlit Application
 
-This project is a professional, user-friendly Streamlit web application for biomedical named entity recognition (NER) using the BioBERT model. Users can input biomedical text and receive token-level predictions, with vibrant visualizations for each entity label.
+This project is a  user-friendly Streamlit web application for biomedical named entity recognition (NER) using the BioBERT model. Users can input biomedical text and receive token-level predictions, with vibrant visualizations for each entity label.
 
 **Key Features:**
 - **Interactive NER:** Enter biomedical text and instantly see token-level predictions using the BioBERT model.
@@ -13,8 +13,8 @@ This project is a professional, user-friendly Streamlit web application for biom
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
-   cd nlp-biobert-streamlit-app
+   git clone https://github.com/mohansree14/Token-Classification.git
+
    ```
 
 2. **Install the required packages:**
