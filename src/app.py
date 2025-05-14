@@ -66,6 +66,54 @@ def main():
             )
             st.table(df)
 
+            # --- Visual Highlighting ---
+            st.subheader("Entity Visualization")
+            def get_color(label):
+                if label == "O":
+                    return "black"
+                elif label.startswith("B-"):
+                    return "green"
+                elif label.startswith("I-"):
+                    return "blue"
+                else:
+                    return "orange"
+
+            highlighted_text = ""
+            for token, label in zip(pred_tokens[:min_len], pred_labels[:min_len]):
+                color = get_color(label)
+                if label != "O":
+                    highlighted_text += f'<span style="color:{color}; font-weight:bold">{token}</span> '
+                else:
+                    highlighted_text += f'{token} '
+            st.markdown(highlighted_text, unsafe_allow_html=True)
+
+            # --- Graphical Entity Visualization ---
+            st.subheader("Entity Visualization (Colorful)")
+
+            # Assign vibrant colors to each entity type
+            ENTITY_COLORS = {
+                "O": "#ffffff",      # White for non-entities
+                "B-AC": "#ffb347",  # Orange
+                "B-LF": "#77dd77",  # Green
+                "I-LF": "#779ecb",  # Blue
+            }
+
+            def get_bgcolor(label):
+                return ENTITY_COLORS.get(label, "#e0e0e0")  # Default gray
+
+            highlighted_text = ""
+            for token, label in zip(pred_tokens[:min_len], pred_labels[:min_len]):
+                bgcolor = get_bgcolor(label)
+                if label != "O":
+                    display_label = f'<span style="font-size:10px;color:#333;background:#eee;border-radius:3px;padding:1px 3px;margin-left:2px;">{label}</span>'
+                else:
+                    display_label = ""
+                highlighted_text += (
+                    f'<span style="background-color:{bgcolor};padding:2px 4px;border-radius:4px;margin:2px;display:inline-block;">'
+                    f'{token} {display_label}</span> '
+                )
+            st.markdown(highlighted_text, unsafe_allow_html=True)
+
             # --- Save interaction to log file ---
             import json
             import os
