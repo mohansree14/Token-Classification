@@ -72,7 +72,7 @@ def main():
                 if label == "O":
                     return "white"
                 elif label.startswith("B-"):
-                    return "green"
+                    return "red"
                 elif label.startswith("I-"):
                     return "blue"
                 else:
