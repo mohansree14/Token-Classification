@@ -70,7 +70,7 @@ After comprehensive evaluation in the included Jupyter notebooks, **BioBERT** wa
    streamlit run app.py
    ```
 
-4. **Open your browser** to the local URL provided by Streamlit (usually http://localhost:8501).
+4. **Open your browser** to the local URL provided by Streamlit (https://token-classification.streamlit.app/).
 
 ---
 
