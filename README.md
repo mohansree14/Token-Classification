@@ -1,6 +1,6 @@
 # BioBERT Streamlit Application
 
-This project is a professional, user-friendly Streamlit web application for biomedical named entity recognition (NER) using the BioBERT model. Users can input biomedical text and receive token-level predictions, with vibrant visualizations for each entity label.
+This project is a  user-friendly Streamlit web application for biomedical named entity recognition (NER) using the BioBERT model. Users can input biomedical text and receive token-level predictions, with vibrant visualizations for each entity label.
 
 **Key Features:**
 - **Interactive NER:** Enter biomedical text and instantly see token-level predictions using the BioBERT model.
@@ -13,8 +13,8 @@ This project is a professional, user-friendly Streamlit web application for biom
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
-   cd nlp-biobert-streamlit-app
+   git clone https://github.com/mohansree14/Token-Classification.git
+
    ```
 
 2. **Install the required packages:**
@@ -29,8 +29,8 @@ This project is a professional, user-friendly Streamlit web application for biom
    ```
 
 4. **Use the Application:**
-   - Open the provided local URL in your web browser (usually `http://localhost:8501`).
-   - Or access the deployed app here: [Streamlit App Link](https://your-deployed-app-link)
+   - To access the deployed app here: [Streamlit App Link](https://token-classification.streamlit.app/)
+>>>>>>> 895f7604f7e4de2f68f482195768849b38801c8f
    - Enter your biomedical text in the main area and click **Analyze**.
    - View all tokens and their predicted labels in a table and as a colorful graphical visualization.
    - Check the sidebar for instructions and your last 5 interactions.
@@ -43,6 +43,3 @@ BioBERT is a domain-specific language representation model pre-trained on large-
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.

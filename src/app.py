@@ -70,9 +70,9 @@ def main():
             st.subheader("Entity Visualization")
             def get_color(label):
                 if label == "O":
-                    return "black"
+                    return "white"
                 elif label.startswith("B-"):
-                    return "green"
+                    return "red"
                 elif label.startswith("I-"):
                     return "blue"
                 else:
