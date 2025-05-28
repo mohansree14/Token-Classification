@@ -1,22 +1,15 @@
 # BioBERT Streamlit Application
 
-This project is a Streamlit application that utilizes the BioBERT model for token classification tasks. The application allows users to input text and receive predictions based on the BioBERT model's capabilities.
+This project is a professional, user-friendly Streamlit web application for biomedical named entity recognition (NER) using the BioBERT model. Users can input biomedical text and receive token-level predictions, with vibrant visualizations for each entity label.
 
-## Project Structure
+**Key Features:**
+- **Interactive NER:** Enter biomedical text and instantly see token-level predictions using the BioBERT model.
+- **Supported Labels:** The app highlights four entity labels: `O`, `B-AC`, `B-LF`, and `I-LF`, each with a distinct, vibrant color for easy interpretation.
+- **Graphical Visualization:** Entities are visually highlighted in the text, making it easy to spot and understand predictions.
+- **Interaction Log:** The sidebar displays your last 5 analyses, including input, predictions, and timestamps.
+- **Easy to Use:** Clean interface with sidebar instructions and a simple workflow.
 
-```
-nlp-biobert-streamlit-app
-├── src
-│   ├── app.py               # Main entry point for the Streamlit application
-│   ├── biobert_model.py     # Implementation for loading and using the BioBERT model
-│   ├── tokenizer.py          # Tokenizer logic for processing input text
-│   └── types
-│       └── index.py         # Custom types and interfaces used throughout the application
-├── requirements.txt          # List of dependencies required for the project
-└── README.md                 # Documentation for the project
-```
-
-## Setup Instructions
+## How It Runs
 
 1. **Clone the repository:**
    ```bash
@@ -35,14 +28,16 @@ nlp-biobert-streamlit-app
    streamlit run src/app.py
    ```
 
-## Usage
-
-- Once the application is running, navigate to the provided local URL in your web browser.
-- Input your text in the designated area and submit to receive predictions from the BioBERT model.
+4. **Use the Application:**
+   - Open the provided local URL in your web browser (usually `http://localhost:8501`).
+   - Or access the deployed app here: [Streamlit App Link](https://your-deployed-app-link)
+   - Enter your biomedical text in the main area and click **Analyze**.
+   - View all tokens and their predicted labels in a table and as a colorful graphical visualization.
+   - Check the sidebar for instructions and your last 5 interactions.
 
 ## BioBERT Model
 
-BioBERT is a domain-specific language representation model pre-trained on large-scale biomedical corpora. This application leverages BioBERT's capabilities for token classification tasks, making it suitable for various biomedical text processing applications.
+BioBERT is a domain-specific language representation model pre-trained on large-scale biomedical corpora. This application leverages BioBERT's capabilities for token classification tasks, making it suitable for biomedical text mining and NER applications.
 
 ## Contributing
 
